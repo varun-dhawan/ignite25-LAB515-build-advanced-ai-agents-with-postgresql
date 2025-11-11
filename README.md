@@ -37,7 +37,7 @@ By the end of this lab, you will be able to:
 ### 🏗️ Architecture
 
 ```mathematica
-User Query → Semantic Kernel Agent → PostgreSQL (Vector + Graph + AI) → Azure OpenAI → Contextual Answer
+ User Query → Semantic Kernel Agent → PostgreSQL (Vector + Graph + AI) → Azure OpenAI → Contextual Answer
 ```
 
 - Semantic Kernel Agent: Handles reasoning, plugin invocation, and dialogue context.
@@ -47,15 +47,15 @@ User Query → Semantic Kernel Agent → PostgreSQL (Vector + Graph + AI) → Az
 
 ### 📘 Lab Structure
 
-|Folder                |Description                                             |
-|----------------------|--------------------------------------------------------|
-|lab/                  |Core Jupyter notebooks and sample scripts               |
-|data/                 |Sample dataset (cases.csv) for legal research queries   |
-|src/                  |Source code for agents, plugins, and database connectors|
-|docs/                 |Step-by-step lab manual and architecture guide          |
-|img/                  |Architecture and concept diagrams                       |
-|.devcontainer/        |Preconfigured environment for VS Code                   |
-|infra/ (if applicable)|Deployment templates (Bicep + PowerShell scripts)       |
+|Folder                |Description                                               |
+|----------------------|----------------------------------------------------------|
+|`lab/`                  |Core Jupyter notebooks and sample scripts               |
+|`data/`                 |Sample dataset (cases.csv) for legal research queries   |
+|`src/`                  |Source code for agents, plugins, and database connectors|
+|`docs/`                 |Step-by-step lab manual and architecture guide          |
+|`img/`                  |Architecture and concept diagrams                       |
+|`.devcontainer/`        |Preconfigured environment for VS Code                   |
+|`infra/` (if applicable)|Deployment templates (Bicep + PowerShell scripts)       |
 
 ### 🚀 Getting Started
 
@@ -69,7 +69,7 @@ azd auth login
 azd env new
 azd provision
 ```
-This will deploy the Azure resources (PostgreSQL + OpenAI) and generate a .env file containing connection details.
+This will deploy the Azure resources (PostgreSQL + OpenAI) and generate a `.env` file containing connection details.
 
 #### 2️⃣ Configure Database
 
